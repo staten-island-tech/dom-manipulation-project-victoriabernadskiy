@@ -16,3 +16,8 @@ appendTitle ("poopystinky");
 
 console.log(DOMSelectors.newdiv.children[0].innerText);
 
+function displayName() {
+    var originalName = document.getElementById("txtInputData").value;
+    document.getElementById("show_name").innerHTML = "Your Name is :" + originalName;
+ }
+
