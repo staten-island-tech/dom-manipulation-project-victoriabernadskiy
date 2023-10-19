@@ -1,17 +1,18 @@
 const DOMSelectors = {
-    form: document.querySelector("#form"),
-    //grab the text input
-    //grab all the h2s
-    firstName: document.querySelector(".first-name"),
-    h2s: document.querySelectorAll("h2"),
+    title: document.getElementById("header-title"),
+    summary: document.querySelector(".summary"),
+    newdiv: document.getElementById("newdiv"),
 };
 
-console.log(DOMSelectors.firstName);
-console.log(DOMSelectors.h2s);
+console.log(DOMSelectors.title)
 
-DOMSelectors.form.addEventListener("submit", function(event){
-    event.preventDefault();
-    console.log(DOMSelectors.firstName.value);
-    DOMSelectors.h2s.forEach(
-        (el) => el.textContent = DOMSelectors.firstName.value);
-});
+DOMSelectors.title.innerText = ("Sleepy Time")
+
+function appendTitle(extraword) {
+    DOMSelectors.title.innerText = DOMSelectors.title.innerText + extraword;
+}
+
+appendTitle ("poopystinky");
+
+console.log(DOMSelectors.newdiv.children[0].innerText);
+
