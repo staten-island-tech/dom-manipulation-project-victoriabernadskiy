@@ -1,4 +1,4 @@
-/* const DOMSelectors = {
+ const DOMSelectors = {
     title: document.getElementById("header-title"),
     summary: document.querySelector(".summary"),
     newdiv: document.getElementById("newdiv"),
@@ -14,12 +14,12 @@ function appendTitle(extraword) {
 
 appendTitle ("poopystinky");
 
-console.log(DOMSelectors.newdiv.children[0].innerText); */
+console.log(DOMSelectors.newdiv.children[0].innerText); 
 
-/* function displayName() {
+ function displayName() {
     var originalName = document.getElementById("txtInputData").value;
     document.getElementById("show_name").innerHTML = "Your Name is " + originalName;
- } */
+ } 
  //insert adjacent html
 
  const DOMSelectors = {
@@ -44,3 +44,7 @@ document
 .querySelector()
 .insertAdjacentHTML()
     })
+
+    btn.addEventListener('click', function (e) {
+        console.log(e.target);
+      });
