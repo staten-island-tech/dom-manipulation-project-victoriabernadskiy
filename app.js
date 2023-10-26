@@ -18,5 +18,6 @@ DOMSelectors.card_form.addEventListener("submit",(event) => {
 })
 
 function add_card(card){
+
     console.log(card)
 }
