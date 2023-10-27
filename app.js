@@ -17,7 +17,12 @@ DOMSelectors.card_form.addEventListener("submit",(event) => {
     add_card(new_card)
 })
 
-function add_card(card){
 
+function add_card(card){
+    document.querySelector( )
     console.log(card)
 }
+
+DOMSelectors.card_form.insertAdjacentHTML("beforeend", 
+`new_card`
+)
