@@ -26,3 +26,9 @@ function add_card(card){
 DOMSelectors.card_form.insertAdjacentHTML("beforeend", 
 `new_card`
 )
+
+DOMSelectors.card_form.addEventListener("submit", (event => {
+    event.preventDefault
+    DOMSelectors.name_input.value
+    
+}))
