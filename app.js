@@ -15,20 +15,27 @@ DOMSelectors.card_form.addEventListener("submit",(event) => {
         city: DOMSelectors.city_input.value
     }
     add_card(new_card)
+    clear_fields()
 })
 
-
 function add_card(card){
-    document.querySelector()
-    console.log(card)
+    DOMSelectors.card_holder.insertAdjacentHTML("afterbegin", `<div class="card">
+    <h1 class="card-title">${card.name}</h1>
+    <h2 class="age">${card.age}</h2>
+    <img src="${card.city}" alt=""> 
+    <button class="remove">Remove</button>
+</div>`)
+
+    const button = document.querySelector(".remove")
+    button.addEventListener("click", (event)=> {
+         button.parentElement.remove()
+    })
 }
 
-DOMSelectors.card_form.insertAdjacentHTML("beforeend", 
-`new_card`
-)
+function clear_fields(){
+   DOMSelectors.name_input.value = null;
+    DOMSelectors.age_input.value = null;
+    DOMSelectors.city_input.value = null;
+}
 
-DOMSelectors.card_form.addEventListener("submit", (event => {
-    event.preventDefault
-    DOMSelectors.name_input.value
-    
-}))
+
