@@ -3,15 +3,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tea</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
-<form id="card_form">
-    <input type="text" id="name_input" placeholder="Name" required="true">
-    <input type="text" id="age_input" placeholder="Age" required="true">
-    <input type="text" id="city_input" placeholder="City" required="true">
+<!-- <form id="card_form">
+    <input type="text" id="name_input" placeholder="Tea Flavor" required="true">
+    <input type="text" id="age_input" placeholder="Tea Type" required="true">
+    <input type="text" id="city_input" placeholder="Cup Picture Link" required="true">
     <button id="btn"> Create Card </button>
-</form>
+</form> -->
+
+<form id="card_form">
+    <div class="input-container">
+      <label for="name_input">Tea Flavor</label>
+      <input type="text" id="name_input" placeholder="Enter tea flavor" required>
+    </div>
+  
+    <div class="input-container">
+      <label for="age_input">Tea Type</label>
+      <input type="text" id="age_input" placeholder="Enter tea type" required>
+    </div>
+  
+    <div class="input-container">
+      <label for="city_input">Cup Picture Link</label>
+      <input type="text" id="city_input" placeholder="Enter cup picture link" required>
+    </div>
+  
+    <button id="btn">Create Card</button>
+  </form>
 
 <div id="card_holder">
     <!-- <div class="card">
@@ -22,7 +44,6 @@
     </div> -->
     
 </div>  
-
 </body>
 
 <script src="app.js"></script>
