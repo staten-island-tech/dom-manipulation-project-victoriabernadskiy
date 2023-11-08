@@ -117,3 +117,15 @@
     justify-content: center;
     gap: 10px;
   }
+
+  .card img {
+    width: 160px;
+    height: 180px;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 45px;
+    color: aliceblue;
+  }
